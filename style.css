@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://img.freepik.com/free-photo/back-school-decoration-with-pencils-calculator-space_23-2147662344.jpg') no-repeat center center/cover;
+  filter: brightness(70%);
+}
+
+.calculator {
+  border: 1px solid #175adf;
+  padding: 20px;
+  width: 100%;
+  border-radius: 20px;
+  background: rgba(87, 49, 49, 0.1);
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+  backdrop-filter: blur(50px);
+}
+
+input {
+  width: 320px;
+  border: none;
+  padding: 24px;
+  margin: 10px;
+  background: transparent;
+  box-shadow: 0px 3px 15px rgb(255, 0, 238);
+  font-size: 40px;
+  text-align: right;
+  cursor: pointer;
+  color: #7c7c7c;
+}
+
+input::placeholder {
+  color: #8f8787;
+}
+
+button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.equalBtn {
+  background-color: #ff9238;
+}
+
+.operator {
+  color: #c4ee0a;
+}
+
+.dark-mode .calculator {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.dark-mode button,
+.dark-mode input {
+  color: #ffffff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .equalBtn {
+  background-color: #fb7c14;
+}
+
+.dark-mode .operator {
+  color: #ffffff;
+}
